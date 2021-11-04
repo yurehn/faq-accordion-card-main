@@ -1,0 +1,140 @@
+:root{
+    /* Colors */
+    --white: white;
+    --gray: hsl(0, 0%, 83%);
+
+    /* Text */
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+
+    /* Background gradient: */
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+
+    /* Neutral */
+
+    /* Text */
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    --pale-gray: rgb(87, 87, 87);
+
+    /* Dividers */
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+
+    /* Typography */
+
+    /* Body Copy */
+    --Font-size-1: 16px;
+    --Font-size-2: 18px;
+    --Font-size-3: 38px;
+
+    /* Font */
+    --Family-Kumbh-Sans: 'Kumbh Sans', sans-serif;
+
+    /* Weights */
+
+    --weight-1: 400;
+    --weight-2: 700;
+}
+
+
+body{
+    background: linear-gradient(var(--Soft-violet), var(--Soft-blue)) , no-repeat;
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0px;
+
+    font-family: var(--Family-Kumbh-Sans);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.title{
+    font-size: var(--Font-size-3);
+    font-weight: var(--weight-2);
+    margin: 0px 0px 30px 0px;
+}
+
+.panel{
+    display: none;
+
+}
+
+.active{
+    display: block;
+    padding: 0px 0px 25px 0px;
+    font-size: var(--Font-size-1);
+    color: var(--Dark-grayish-blue);
+
+    border: 1px var(--gray);
+    border-style: none none solid none;
+}
+
+.accordion::after{
+    content: url("images/icon-arrow-down.svg");
+    padding-right: 15px;
+    float: right;
+}
+
+.accordion{
+
+    padding: 25px 0px;
+    margin: 0px;
+    width: 100%;
+
+    background: var(--white);
+    cursor: pointer;
+
+    display: block;
+    border: 1px var(--gray);
+    border-style: none none solid none;
+    
+    text-align: left; 
+
+    font-size: var(--Font-size-2);
+    color: var(--pale-gray);
+    letter-spacing: 0.7px;
+
+}
+
+.container{
+    border-radius: 35px;
+    
+    background: url('images/illustration-woman-online-desktop.svg') -115px no-repeat,
+                url('images/bg-pattern-desktop.svg') -795px -400px no-repeat;
+    background-size: auto 70%, auto 185%;
+
+    background-color: var(--white);
+    
+    position: relative;
+
+    height: 700px;
+    width: 1300px;
+}
+
+.container-imag_box{
+
+    background: url('images/illustration-box-desktop.svg') -80px 300px no-repeat;
+    background-size: 191px 184;
+
+    height: 700px;
+    width: 1300px;
+
+}
+
+.container-info{
+    
+    width: 35%;
+    height: 70%;
+    /* background: rgb(236, 165, 236); */
+    position: absolute; 
+    right: 10%;
+    bottom: 16%;
+    /* bottom: ; */
+
+}
